@@ -24,3 +24,26 @@ body {
 body a {
   color: var(--link-color);
 }
+/\* 常规浅色模式下的网页背景颜色及文本颜色 \*/
+
+body {
+
+ background: #fff;
+
+ color: #222;
+
+}
+
+/\* 深色模式下的网页背景颜色及文本颜色 \*/
+
+@media (prefers-color-scheme: dark) {
+
+ body {
+
+ background-color: #222;
+
+ color: #ddd;
+
+ }
+
+}
