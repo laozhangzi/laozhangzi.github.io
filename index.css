@@ -1,0 +1,26 @@
+:root {
+  --bg: #fff;
+  --text-color: #222;
+  --link-color: #0033cc;
+}
+
+:root .dark {
+  --bg: #121212;
+  --text-color: #eee;
+  --link-color: #809fff;
+}
+
+body {
+  --duration: 0.5s;
+  --timing: ease;
+
+  color: var(--text-color);
+  background-color: var(--bg);
+
+  /* 在模式切换过程中给color和background-color属性添加过渡效果 */
+  transition: background-color var(--duration) var(--timing),
+    color var(--duration) var(--timing);
+}
+body a {
+  color: var(--link-color);
+}
